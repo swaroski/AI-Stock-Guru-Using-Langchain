@@ -1,9 +1,8 @@
 <p>
-  <a href="https://www.linkedin.com/in/suyogbhise7982//[removed]" target="_blank" rel="nofollow noreferrer">
+  <a href="https://www.linkedin.com/in/suyogbhise7982//[removed]" onclick="window.open(this.href,'_blank');return false;" rel="nofollow noreferrer">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"> 
   </a> &nbsp; 
 </p>
-
 
 # AI-Stock-Guru-Using-Langchain
 Building an AI Equity Analyst Using Langchain, OpenAI and Streamlit
