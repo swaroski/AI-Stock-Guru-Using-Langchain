@@ -1,3 +1,12 @@
+<div id="badges">
+  <a href="https://www.linkedin.com/in/suyogbhise7982/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+</div>
+
+
+
+
 # AI-Stock-Guru-Using-Langchain
 Building an AI Equity Analyst Using Langchain, OpenAI and Streamlit
 
