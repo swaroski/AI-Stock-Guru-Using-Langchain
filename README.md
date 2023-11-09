@@ -16,6 +16,6 @@ To set up the project, you need to install the required dependencies. You can do
 
 ```
 pip install -r requirements.txt
-
+```
 
 
