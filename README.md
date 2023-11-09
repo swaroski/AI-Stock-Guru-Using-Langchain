@@ -2,6 +2,9 @@
   <a href="https://www.linkedin.com/in/suyogbhise7982//[removed]" target="_blank" rel="nofollow noreferrer">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"> 
   </a> &nbsp; 
+  <a href="https://leetcode.com/swaroski/[removed]" rel="nofollow noreferrer">
+    <img src="https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black" alt="Leetcode"> 
+  </a>
 </p>
 
 # AI-Stock-Guru-Using-Langchain
