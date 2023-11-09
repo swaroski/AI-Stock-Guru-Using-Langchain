@@ -5,9 +5,6 @@
   </a>
 </p>
 
-https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
-
-
 # AI-Stock-Guru-Using-Langchain
 Building an AI Equity Analyst Using Langchain, OpenAI and Streamlit
 
