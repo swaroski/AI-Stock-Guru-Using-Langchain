@@ -1,4 +1,4 @@
-https://img.shields.io/badge/Linkedin-blue
+![Static Badge](https://img.shields.io/badge/Linkedin-blue)
 
 
 
