@@ -1,11 +1,11 @@
 <p>
   <a href="https://www.linkedin.com/in/suyogbhise7982//[removed]" rel="nofollow noreferrer">
-    <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"> LinkedIn
   </a> &nbsp; 
   </a>
 </p>
 
-
+https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 
 
 # AI-Stock-Guru-Using-Langchain
