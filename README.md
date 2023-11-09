@@ -1,8 +1,3 @@
-<div id="badges">
-  <a href="https://www.linkedin.com/in/suyogbhise7982/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-</div>
 
 
 
@@ -19,8 +14,8 @@ This application leverages AI to provide financial analysis for different compan
 
 To set up the project, you need to install the required dependencies. You can do this by running the following command:
 
+```
 pip install -r requirements.txt
 
-https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white&style=for-the-badge
 
 
