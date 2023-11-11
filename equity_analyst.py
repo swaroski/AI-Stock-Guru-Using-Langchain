@@ -13,6 +13,9 @@ from typing import List
 import spacy 
 from textblob import TextBlob
 import emoji 
+import streamlit as st 
+
+
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -21,6 +24,7 @@ load_dotenv()
 serpapi_api_key = os.getenv("SERPAPI_API_KEY")
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+@st.cache_data
 def get_company_news(company_name):
     params = {
         "engine": "google",
@@ -34,6 +38,7 @@ def get_company_news(company_name):
 
     return data.get('news_results')
 
+@st.cache_data
 def get_tweet_data(company_name):
     
     search_params = {
@@ -53,7 +58,7 @@ def get_tweet_data(company_name):
     return tweet
 
 
-
+@st.cache_data
 def write_news_to_file(news, filename):
     with open(filename, 'w') as file:
         for news_item in news:
@@ -65,6 +70,7 @@ def write_news_to_file(news, filename):
                 file.write(f"Link: {link}\n")
                 file.write(f"Date: {date}\n\n")
 
+@st.cache_data
 def write_knowledge_to_file(knowledge, filename):
     with open(filename, 'a') as file:
         file.write("\nKnowledge Graph\n")
@@ -81,6 +87,7 @@ def replace_emojis(text):
     replaced_text = emoji.demojize(text)
     return replaced_text
 
+@st.cache_data
 def write_tweet_to_file(tweet, filename):
     with open(filename, 'a', encoding="utf-8") as file:
         file.write("\nTwitter results\n")
@@ -98,7 +105,7 @@ def write_tweet_to_file(tweet, filename):
                 file.write("\n")
 
 
-
+@st.cache_data
 def get_stock_evolution(company_name, period="1y"):
     # Get the stock information
     stock = yf.Ticker(company_name)
@@ -118,7 +125,7 @@ def get_stock_evolution(company_name, period="1y"):
     # Return the DataFrame
     return hist
 
-
+@st.cache_data
 def get_financial_statements(ticker):
     # Create a Ticker object
     company = Ticker(ticker)
@@ -140,9 +147,7 @@ def get_financial_statements(ticker):
         file.write("\nValuation Measures\n")
         file.write(valuation_measures)
 
-
-
-
+@st.cache_data
 def get_data(company_name, company_ticker, period="1y", filename="investment.txt"):
     news_results = get_company_news(company_name)
     tweet = get_tweet_data(company_name)
@@ -161,7 +166,7 @@ def get_data(company_name, company_ticker, period="1y", filename="investment.txt
 
     return hist, tweet 
 
-
+@st.cache_data
 def chunk_text(text: str, max_tokens: int = 512, overlap: int = 10) -> List[str]:
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(text)
@@ -208,6 +213,7 @@ def chunk_text(text: str, max_tokens: int = 512, overlap: int = 10) -> List[str]
     return chunks
 
 # Process each chunk separately
+@st.cache_data
 def process_chunks(chunks: List[str]) -> str:
     results = []
     for chunk in chunks:
